@@ -73,5 +73,10 @@ class SudokuTest {
 	void testSetWrongSizeMatrix() {
 		assertThrows(IllegalArgumentException.class, () -> b.setMatrix(matrixWrongSize));
 	}
+	
+	@Test
+	void testEmpty() {
+		assertTrue(b.solve());
+	}
 
 }
